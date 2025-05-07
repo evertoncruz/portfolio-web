@@ -5,7 +5,7 @@
 }
 
 body {
-  color: #fff;
+  color: #d1c7c7;
   background-color: #171414;
   font-family: "Montserrat", sans-serif;
 }
@@ -42,6 +42,7 @@ section {
   justify-content: flex-end;
   height: 100%;
   margin-left: 100px;
+  margin-bottom: 25px;
 }
 
 .section-1 article h2 {
@@ -92,6 +93,40 @@ section {
   margin-bottom: 70px;
 }
 
+.section-2,
+.section-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-2 ul,
+.section-3 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 65px;
+  list-style: none;
+}
+
+.section-2 h1,
+.section-3 h1 {
+  font-size: 96px;
+  font-weight: 700;
+  border-right: 1px solid #d1c7c7;
+  padding-right: 40px;
+}
+
+ul li img {
+  width: 150px;
+  height: 150px;
+  transition: scale 0.4s ease;
+}
+
+ul li img:hover {
+  scale: 1.3;
+}
+
 .hr-1 {
   left: 25%;
 }
@@ -122,4 +157,109 @@ strong {
 
 .a-1 {
   margin-top: 100px;
+}
+
+@media (max-width: 1365px) {
+  .section-1 p {
+    top: 30px;
+  }
+}
+
+@media (max-width: 980px) {
+  .section-1 h1,
+  .section-2 h1,
+  .section-3 h1 {
+    font-size: 60px;
+  }
+  .section-1 article {
+    margin: 0;
+  }
+}
+
+@media (max-width: 810px) {
+  .section-1 div {
+    flex-direction: row;
+    left: 50px;
+    top: 70px;
+  }
+
+  .section-1 div hr {
+    width: 20%;
+  }
+
+  .rotate {
+    transform: none;
+  }
+
+  .section-1 h3,
+  .section-1 a {
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-2,
+  .section-3 {
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .section-1 div h3 {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 530px) {
+  header h3 {
+    font-size: 35px;
+  }
+
+  .section-1 h1,
+  .section-2 h1,
+  .section-3 h1 {
+    font-size: 38px;
+  }
+
+  .section-1 h2,
+  .section-2 h2,
+  .section-3 h2 {
+    font-size: 28px;
+  }
+
+  .section-1 h1 div {
+    gap: 10px;
+  }
+
+  h1,
+  h2 {
+    white-space: nowrap;
+  }
+
+  ul li img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 330px) {
+  header h3 {
+    font-size: 30px;
+  }
+
+  .section-1 p,
+  .section-1 div {
+    font-size: 10px;
+  }
+
+  .section-1 h1,
+  .section-2 h1,
+  .section-3 h1 {
+    font-size: 30px;
+  }
+
+  .section-1 h2,
+  .section-2 h2,
+  .section-3 h2 {
+    font-size: 20px;
+  }
 }
